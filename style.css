@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap');
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    margin:0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: 00d678 ;
+}
+
+button {
+    background-color: blue;
+    border: cyan;
+    border-radius: 12px;
+    color: white;
+    padding: 12px;
+    font-family: "Roboto";
+    width: fit-content;
+}
+
+.header,
+.right-side {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 20px;
+    gap: 15px;
+    list-style: none;
+}
+
+.left-side {
+    font-size: 20px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+a:hover {
+    color: rgb(1, 255, 179);
+    font-size: larger;
+}
+
+.hero-container {
+    background-color: #33e996;
+    box-shadow: inset 20px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 25%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 29px 17px;
+}
+
+.hero-left,
+.hero-right {
+    display: flex;
+    flex-flow: column;
+    padding: 25px;
+    margin: 8px;
+}
+
+.hero-right {
+    width: 400px;
+    height: auto;
+}
+
+.subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content:flex-start;
+    flex:1;
+    padding: 20px;
+}
+
+#pcw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 0 1 auto;
+    margin: 20px;
+    padding: 15px;
+}
+
+.fourpics {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.lz1,
+.mc2,
+.sg3,
+.bh4   {
+    width: 200px;
+    height: auto;
+    border:2px solid #10a15f;
+    border-radius: 24px;
+}
+
+.statement {
+    display: flex;
+    background-color: #26f19679;
+    padding: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 15px;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-register {
+    display: flex;
+    flex-flow: column wrap;
+    flex:1 1 25%;
+    width: 20%;
+}
+
+.agree {
+    align-self: center;
+    margin: 25px
+}
+.colorm {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgba(13, 126, 255, 0.733);
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    flex:1 1 25%;
+    max-width: 430px;
+}
+
+
+
+
+
+@media only screen and (max-width: 812px) {
+    
+    body {
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .header, .right-side, .left-side{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+    }
+
+    #pcw {
+        display: flex;
+        align-self: center;
+    }
+
+    .fourpics {
+        gap: 10px;
+    }
+}
